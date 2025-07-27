@@ -1,0 +1,48 @@
+/* .box:first-child{
+    background-color: rgb(239, 88, 88);
+} */
+.boxes *{
+    color: green;
+    border: 2px solid black;
+}
+
+/* .box::first-line{
+    color: blue;
+}
+
+p, a, .box, .boxes, [data-ramesh="primary"]{
+    padding-top: 50px;
+}
+
+.box:nth-child(odd){
+    background-color: yellow;
+}
+
+.box:nth-last-child(2){
+    background-color: rgb(223, 105, 223);
+} */
+
+.boxes::before{
+    content: "Hi, Ramash this side ";
+    color: black;
+}
+
+.boxes::after{
+    content: "Good bye, buddy!";
+    color: black;
+}
+
+::selection{
+    background-color: rgb(61, 61, 239);
+    color: white;
+}
+
+.box::first-letter{
+    color: peru;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: rgb(133, 133, 133);
+    /* font-size: 12px; */
+}

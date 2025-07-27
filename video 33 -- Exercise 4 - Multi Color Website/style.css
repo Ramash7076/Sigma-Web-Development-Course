@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+    display: flex;
+    
+}
+body{
+    background-color: var(--seccolor);
+}
+
+@media only screen and (min-width: 480px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+:root{
+    --color: yellow;
+    --seccolor: red;
+}
