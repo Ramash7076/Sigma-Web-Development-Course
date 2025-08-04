@@ -1,0 +1,38 @@
+.container {
+    border: 2px solid red;
+    display: flex;
+    height: 80vh;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    flex-flow: row wrap;
+    gap: 30px 10px;
+}
+
+.item {
+    height: 50px;
+    width: 60px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+    /* margin: 3px; */
+    /* flex-grow: 1; */
+}
+
+.item1{
+    /* flex-grow: 3; */
+    flex-shrink: 2;
+    align-self: flex-start;
+
+}
+
+.order-1{
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
