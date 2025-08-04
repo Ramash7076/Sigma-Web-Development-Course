@@ -1,0 +1,24 @@
+.box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    background-color: beige;
+    /* transform: rotate(40deg); */
+    /* transform: rotate(0.25turn); */
+    /* transform: rotateZ(40deg); */
+    /* transform: scalex(1.3);
+    transform: skew(5deg); */
+    /* transform: translateX(100%); */
+    /* transform: translateX(100%) skew(34deg) translatey(50%); */
+    /* transform-origin: -50% -50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid purple;
+
+}
