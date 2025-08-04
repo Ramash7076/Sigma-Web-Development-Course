@@ -1,0 +1,42 @@
+.container {
+    border: 2px solid black;
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: [pehla] 120px [doosra] 100px [end];
+    grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(4, 80px);
+    /* grid-template-rows: repeat(2, 80px); */
+    gap: 10px 44px;
+    /* justify-content: center; */
+    /* justify-items: center;
+    align-items: center; */
+    /* align-content: center; */
+    place-items: center;
+    place-content: center;
+
+    
+    
+}
+
+.items {
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+}
+
+/* .item-4{
+    grid-row: 1/2;
+    grid-column: pehla/end;
+    justify-self: end;
+    align-self: start;
+} */
+
+/* .item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+} */
