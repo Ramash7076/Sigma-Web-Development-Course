@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-color: blue;
+}
+
+.box {
+    height: 121px;
+    width: 121px;
+    background-color: red;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: right-side;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation: top-side;
+    animation-duration: 3s;
+    animation-delay: 0.3s; */
+    /* animation: start1 3s ease-in-out infinite;
+    animation: end1 3s ease-in-out infinite; */
+    animation: ball 5s  linear infinite alternate-reverse; 
+
+}
+
+/* @keyframes start1 {
+    to {
+        transform: translateX(300px) translateY(-300px);
+
+    }
+}
+
+@keyframes end1 {
+    from{
+        transform: translateX(300px) translateY(-300px);
+    }
+    to{
+        transform: translateX(600px) translateY(0px);
+    }
+} */
+
+@keyframes ball {
+    0% {
+        left: 0;
+        bottom: 0;
+    }
+
+    20% {
+        left: 20%;
+        bottom: 40%;
+    }
+
+    40% {
+        left: 40%;
+        bottom: 0%;
+    }
+
+    60% {
+        left: 60%;
+        bottom: 40%;
+
+    }
+
+    80% {
+        left: 80%;
+        bottom: 0;
+    }
+
+    /* 50% {
+        left: 48%;
+        bottom: 60%;
+    }
+
+    70% {
+        left: 58%;
+        bottom: 0%;
+    } */
+
+    100% {
+        left: 100%;
+        bottom: 0%;
+    }
+
+}
+
+
+/* @keyframes top-side {
+    to{
+        transform: translatey(-20vw);
+    }
+} */

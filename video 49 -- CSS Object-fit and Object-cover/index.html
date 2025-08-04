@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container {
+            height: 688px;
+            width: 675px;
+            padding: 40px;
+            border: 2px solid black;
+            background-image: url("https://feeds.abplive.com/onecms/images/uploaded-images/2021/11/08/a98ff7169feb42c2ca6ee33c7484f235_original.jpg?impolicy=abp_cdn&imwidth=1200");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+        }
+        img{
+            height: 488px;
+            width: 466px;
+             object-fit: contain;
+             /* object-fit: cover; */
+             /* object-position: left top; */
+             /* object-position: 20% 50%; */
+             /* object-fit: contain; */
+             
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/11/08/a98ff7169feb42c2ca6ee33c7484f235_original.jpg?impolicy=abp_cdn&imwidth=1200"
+            alt=""> -->
+    </div>
+</body>
+
+</html>

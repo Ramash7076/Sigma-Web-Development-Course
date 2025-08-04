@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container {}
+
+        img {
+
+            width: 488px;
+            height: 250px;
+            /* filter: blur(3px); */
+        }
+
+        .img1 {
+            filter: brightness(50%) contrast(120%);
+        }
+
+        .img2 {
+            filter: grayscale(78%);
+            filter: opacity(.6);
+        }
+
+        .img3 {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1"
+            src="https://d14k1d0ecj3g0p.cloudfront.net/wp-content/uploads/2024/12/virat-kohli-banner-image.webp" alt="">
+        <img class="img2"
+            src="https://c.ndtvimg.com/2023-09/154fgjlg_shah-rukh-khan-_625x300_23_September_23.jpg?downsize=773:435"
+            alt="">
+        <img class="img3"
+            src="https://www.financialexpress.com/wp-content/uploads/2025/07/travel-home-decor-19-1.jpg?w=1024" alt="">
+    </div>
+</body>
+
+</html>
