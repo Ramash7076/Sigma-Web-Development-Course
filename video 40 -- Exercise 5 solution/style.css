@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: pink;
+    height: 83px;
+}
+
+main{
+    background-color: black;
+    color: white;
+    padding: 34px;
+    
+}
+
+.container {
+    background-color: green;
+    margin: 12px 34px;
+    padding: 50px 30px;
+    text-align: center;
+    /* height: 230px; */
+}
+
+.box1 {
+    background-color: rgb(193, 167, 172);
+    height: 70vh;
+    width: 45%;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.box2 {
+    background-color: rgb(79, 134, 246);
+    height: 70vh;
+    width: 45%;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.text-box{
+    padding: 34px;
+    border: 2px solid white;
+    margin: 50px 34vw;
+    font-size: 1.1em;
+    border-radius: 15px;
+}
+
+.logo{
+    height: 52px;
+    width: 52px;
+    background: orangered;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(243, 21, 235);
+}
