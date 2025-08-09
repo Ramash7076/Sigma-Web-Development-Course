@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Write a programm to calculate factorial of a number using reduce and using for loops -->
+
+    <script>
+
+        // arr = [6, 5, 4, 3, 2, 1]            //Using reduce
+
+        // const fact = (a, b) => {
+        //     return a * b
+        // }
+        // console.log(arr.reduce(fact))
+
+
+        const numbers = [3, 4, 5];  // Example input array
+        const fact = [];
+
+        for (let i = 0; i < numbers.length; i++) {
+            let num = numbers[i];
+            let fact1 = 1;
+
+            for (let j = 1; j <= num; j++) {
+                fact1 *= j;  // Multiply fact1 by j each time
+            }
+
+            fact.push(fact1);  // Store the factorial in the result array
+        }
+
+        console.log("Input array:", numbers);
+        console.log("Factorials:", fact);
+
+    </script>
+</body>
+
+</html>
