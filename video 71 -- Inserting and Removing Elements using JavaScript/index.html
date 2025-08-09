@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-created="Ramash">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+
+    </div>
+    <script>
+        // let a = document.createElement("div")
+        // a.innerHTML = "I have been inserted <b>by Ram</b>"
+        // a.className = "alert"
+        // a.setAttribute("class", "created" )
+        // document.querySelector(".container").append(a)
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin", "<b> I am iserted html</b>")
+    </script>
+
+
+</body>
+
+</html>
