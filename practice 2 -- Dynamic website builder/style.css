@@ -1,0 +1,53 @@
+.container{
+    border: 2px solid black;
+    width: 50vw;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
+    position: relative;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+.image{
+    height: 100%;
+    width: 150px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.duration{
+    position: absolute;
+    bottom: 6px;
+    left: 116px;
+    font-size: 10px;
+    background-color: rgb(163, 156, 156);
+    border-radius: 1px;
+    padding: 2px;
+    /* text-align: center; */
+}
+
+
+.main{
+    display: flex;
+    
+}
+.description{
+    display: flex;
+    /* border: 2px solid red; */
+    gap: 12px;
+    margin: 10px;
+    padding: 2px;
+    color: white;
+}
+
+.hero .h2{
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 2px;
+    color: white;
+}

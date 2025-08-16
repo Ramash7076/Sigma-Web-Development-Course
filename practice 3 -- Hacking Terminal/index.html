@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <style>
+        .h2{
+            text-align: center;
+        }
+        .h2 .one{
+            animation: blink1 1s infinite;
+        }
+        .h2 .two{
+            animation: blink2 2s ease-in infinite;
+        }
+        .h2 .three{
+            animation: blink3 3s ease-in infinite;
+        }
+
+        @keyframes blink1 {
+            0%{opacity: 0;}
+            50%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+        @keyframes blink2 {
+            0%{opacity: 0;}
+            50%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+        @keyframes blink3 {
+            0%{opacity: 0;}
+            50%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
+    
+    Initializing Hacking...
+    Reading your Files...
+    Password files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning up...
+
+    The three dots must blink so that it looks like a real terminal
+    -->
+
+    <div class = "h2 first">Initializing Hacking <span class="one"> .</span><span class="two">.</span><span class="three">.</span></div>
+    <div class = "h2 second">Reading your Files<span class="one"> .</span><span class="two">.</span><span class="three">.</span></div>
+    <div class = "h2 third">Password files Detected<span class="one"> .</span><span class="two">.</span><span class="three">.</span></div>
+    <div class = "h2 fourth">Sending all passwords and personal files to server<span class="one"> .</span><span class="two">.</span><span class="three">.</span></div>
+    <div class = "h2 fifth">Cleaning up<span class="one"> .</span><span class="two">.</span><span class="three">.</span></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

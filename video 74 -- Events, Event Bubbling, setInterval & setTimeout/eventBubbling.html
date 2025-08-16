@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+        }
+
+        .childContainer {
+            background-color: rgb(154, 97, 59);
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+        }
+
+        .child {
+            background-color: rgb(12, 26, 231);
+            margin: 14px;
+            padding: 14px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">Hey I am a child</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("You click the child")
+        })
+        document.querySelector(".childContainer").addEventListener("click", () => {
+            // e.stopPropagation()
+            alert("You click the childContainer")
+        })
+        document.querySelector(".container").addEventListener("click", () => {
+            alert("You click the container")
+        })
+
+        function color(){
+            let v1 = Math.floor(Math.random() * 255)
+            let v2 = Math.floor(Math.random() * 255)
+            let v3 = Math.floor(Math.random() * 255)
+            return `rgb(${v1}, ${v2}, ${v3})`
+        }
+
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = color()
+        // }, 1000);
+
+        // console.log(a)
+        // clearInterval(1)
+
+
+        setTimeout(() => {
+            document.querySelector(".childContainer").style.background = color()
+        }, 1000);
+
+        // console.log(a)
+        clearTimeout(1)
+    </script>
+</body>
+
+</html>
