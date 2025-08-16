@@ -172,11 +172,14 @@ body {
 }
 
 .playbar {
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(75, 122, 75);
-    width: 90%;
+    position: fixed;
+    bottom: 20px;
+    filter: invert(1);
+    background: #b0b0b0;
+    border-radius: 20px;
+    width: 70vw;
     padding: 12px;
+    height: 40px;
 }
 
 .songbuttons {
@@ -202,17 +205,67 @@ body {
     padding: 13px;
     border-radius: 5px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.playnow{
+.songList {
+    height: 450px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+
+.songList .info {
+    font-size: 13px;
+    width: auto;
+}
+
+.playnow {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.playnow span{
-    width: 68px;
-    font-size: 15px;
-    padding: 12px;
+.playnow span {
+    width: 55px;
+    font-size: 12px;
+    /* padding: 12px; */
+    max-height: 100vh;
 }
+
+.seekbar {
+    height: 4px;
+    width: 96%;
+    background: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+    cursor: pointer;
+
+}
+
+.circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 8px;
+    left: 0%;
+    transition: left 0.5s ;
+}
+
+.songbuttons img{
+    cursor: pointer;
+}
+
+.songinfo, .songtime{
+    color: black;
+    padding: 0 12px;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
