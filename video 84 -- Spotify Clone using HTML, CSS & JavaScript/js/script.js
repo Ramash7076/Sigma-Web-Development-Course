@@ -24,7 +24,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`http://192.168.29.127:3000/${folder}/`)
+    let a = await fetch(`/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -75,7 +75,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`http://192.168.29.127:3000/songs/`)
+    let a = await fetch(`/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -84,10 +84,10 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/songs")) {
+        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").slice(-2)[0]
             // Get metadata of the folder
-            let a = await fetch(`http://192.168.29.127:3000/songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
             cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
                         <div class="play">
