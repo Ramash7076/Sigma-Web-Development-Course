@@ -3,5 +3,6 @@ import fs from "fs/promises"
 
 let a = await fs.readFile("Ram.txt")
 
-let b = await fs.appendFile("Ram.txt", "\n\nThis is amazing promise")
-console.log(a.toString(), b);
+fs.appendFile("Ram.txt", "\n\nThis is amazing promise")
+fs.writeFile("Ram3.txt", "Ram is a handsome guy anf he loves playing cricket")
+console.log(a.toString());

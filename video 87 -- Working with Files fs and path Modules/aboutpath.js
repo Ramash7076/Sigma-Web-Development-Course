@@ -9,6 +9,6 @@ console.log(path.dirname(myPath));  // Showing directory name
 
 console.log(path.basename(myPath)); //Showing file name like Ram.txt
 
-console.log(path.join("c:/", "programs\\Ram.txt"));
+console.log(path.join("c:/", "Music\\Ram.txt"));
 
 
