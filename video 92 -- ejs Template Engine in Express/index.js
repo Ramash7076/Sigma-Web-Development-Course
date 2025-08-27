@@ -16,7 +16,7 @@ app.get('/blog/:slug', (req, res) => {
     let blogTitle = "Adidas why and when?"
     let blogContent = "Its a very good brand"
     res.render("blogPost", {blogTitle: blogTitle, blogContent: blogContent})
-})
+}) 
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
