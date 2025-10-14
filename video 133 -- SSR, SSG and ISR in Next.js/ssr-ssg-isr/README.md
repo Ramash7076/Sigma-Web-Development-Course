@@ -26,7 +26,7 @@ This is default behaviour
 ## SSG - Static Site Generation
 Any content which does not have network calls is a static page by default
 
-## ISR or ISR - Incremental Site Generation or Incremental Static Regeneration
+## ISG or ISR - Incremental Site Generation or Incremental Static Regeneration
 fecth in next.js caches the response
 To opt out use:
 ```
