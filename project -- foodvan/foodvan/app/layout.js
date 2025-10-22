@@ -1,0 +1,35 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Navbar from "./components/Navbar";
+import SessionWrapper from "./components/SessionWrapper";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Arigato - Food Van",
+  description: "Your favorite meals, just a van away. Discover. Track. Eat. Repeat.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <SessionWrapper>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Navbar />
+        {children}
+        
+      </body>
+      </SessionWrapper>
+    </html>
+  );
+}
